@@ -1,12 +1,15 @@
+//Importamos la clase que sea necesaria para que funcione bien nuestro programa
 import { mostrarResultado } from "./main.js";
 
 export class Vehiculo{
+    //Creacion propiedades privadas
     #marca;
     #modelo;
     #color;
     #fabricacion;
     #cilindrada;
 
+    //Constructor por parametros
     constructor(marca,modelo,color,fabricacion,cilindrada){
         this.#marca=marca;
         this.#modelo=modelo;
@@ -15,6 +18,7 @@ export class Vehiculo{
         this.#cilindrada=cilindrada;
     }
 
+    //Metodo mostrarDatos()
     mostrarDatos(){
         const datos = `
         <p>El vehiculo es de la marca ${this.#marca}</p>
@@ -27,23 +31,25 @@ export class Vehiculo{
         mostrarResultado(datos);
     }
 
+    //Metodo acelerar pasandole la velocidad 
     acelerar(velocidad){
         const mensaje = `El vehiculo de la marca ${this.#marca} ha acelerado a una velocidad de ${velocidad}`
         mostrarResultado(mensaje);
     }
 
-    
+    //Metodo Arrancar
     arrancar(){
         const mensaje = `El vehiculo de la marca ${this.#marca} ha arrancado`
         mostrarResultado(mensaje);
     }
 
+    //Metodo Frenar
     frenar(){
         const mensaje = `El vehiculo de la marca ${this.#marca} ha frenado`
         mostrarResultado(mensaje);
     }
  
-
+    //Metodos get y set de todas las propiedades privadas
     get marca(){
         return this.#marca;
     }

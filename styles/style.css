@@ -4,6 +4,7 @@
 }
 
 body{  
+    
     background-image: url('../assets/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,16 +14,26 @@ body{
     
 }
 
-
 .resultadocontainer{
-    background:linear-gradient(white,rgb(147, 144, 144));
-    box-shadow: 8px 5px 5px black;
+    background:linear-gradient(rgb(253, 242, 242),rgb(132, 128, 128));
+    box-shadow: 9px -7px 5px black;
     color: black;
     padding: 20px;
     position: absolute;
     border-radius: 10px;
-    margin: 150px auto;
+    margin-top: 180px;
+    margin-bottom: 80px;
 
+}
+.parrafo{
+    position: absolute;
+    padding-top: 100px;
+}
+
+.parrafo::before {
+    content: "📢 "; 
+    font-size: 1.2em;
+    margin-right: 5px;
 }
 
 
