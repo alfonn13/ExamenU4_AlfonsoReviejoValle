@@ -1,3 +1,8 @@
+/*
+Nombre: Alfonso Reviejo Valle
+GitHub: 
+*/
+
 import { Vehiculo } from "./vehiculo.js";
 import { mostrarResultado } from "./main.js";
 
