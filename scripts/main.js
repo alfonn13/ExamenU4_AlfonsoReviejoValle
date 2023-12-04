@@ -9,13 +9,14 @@ export function mostrarResultado(mensaje){
 }
 
 const vehiculo1 = new Vehiculo('BMW','CLK','rojo',1992,'2400');
+mostrarResultado("Vehiculo 1");
 vehiculo1.mostrarDatos();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
 vehiculo1.arrancar();
 
 
-const vehiculoObject ={
+const vehiculoObject = {
     marca: 'BMW',
     modelo: 'CLK',
     color: 'rojo',
@@ -24,18 +25,39 @@ const vehiculoObject ={
 }
 
 
+/* Esta en otra forma de meterlo en el LocalStorage
 for(let key in vehiculoObject){
     if(vehiculoObject.hasOwnProperty(key)){
         localStorage.setItem(key, vehiculoObject[key])
     }
 }
-
-/*
-localStorage.setItem('TodoTerreno2', JSON.stringify(vehiculoObejct));
-console.log(JSON.parse(localStorage.getItem('vehiculoObject')));
 */
-// Eliminar un elemento del LocalStorage
-localStorage.removeItem('color')
+localStorage.setItem('vehiculoObject', JSON.stringify(vehiculoObject));
+console.log(JSON.parse(localStorage.getItem('vehiculoObject')));
 
-// Eliminar todos los elementos de un LocalStorage
-localStorage.clear() 
+const deportivo1 = new AutomovilDeportivo('Ferrari','Spider','amarillo',2020,'4000','500');
+mostrarResultado("Coche Deportivo 1");
+deportivo1.mostrarDatos();
+deportivo1.acelerar(140);
+deportivo1.frenar();
+deportivo1.arrancar();
+
+const deportivoObject = {
+    marca: 'Ferrari',
+    modelo: 'Spider',
+    color: 'amarillo',
+    fabricacion: 2020,
+    cilindrada: '4000',
+    potenciaMotor: '500'
+}
+
+for(let key in deportivoObject){
+    if(deportivoObject.hasOwnProperty(key)){
+        localStorage.setItem(key, deportivoObject[key])
+    }
+}
+
+localStorage.removeItem('color');
+localStorage.removeItem('fabricacion');
+
+localStorage.clear();

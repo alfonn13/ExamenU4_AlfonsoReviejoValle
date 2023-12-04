@@ -13,6 +13,13 @@ export class AutomovilDeportivo extends Vehiculo {
         `Se ha actiado el Modo Deportivo`
     }
 
+    mostrarDatos(){
+        super.mostrarDatos();
+    
+        const datosDeportivo = `La potencia del motor es ${this.#potenciaMotor}`;
+        mostrarResultado(`<p>${datosDeportivo}</p>`);
+    }
+
     get potenciaMotor(){
         return this.#potenciaMotor;
     }
@@ -21,3 +28,4 @@ export class AutomovilDeportivo extends Vehiculo {
         this.#potenciaMotor=potenciaMotor;
     } 
 }
+
