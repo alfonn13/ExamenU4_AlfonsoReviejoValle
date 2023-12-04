@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Rubik;
+}
+
+

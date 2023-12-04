@@ -25,13 +25,7 @@ const vehiculoObject = {
 }
 
 
-/* Esta en otra forma de meterlo en el LocalStorage
-for(let key in vehiculoObject){
-    if(vehiculoObject.hasOwnProperty(key)){
-        localStorage.setItem(key, vehiculoObject[key])
-    }
-}
-*/
+
 localStorage.setItem('vehiculoObject', JSON.stringify(vehiculoObject));
 console.log(JSON.parse(localStorage.getItem('vehiculoObject')));
 
