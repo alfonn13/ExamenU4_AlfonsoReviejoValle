@@ -3,13 +3,47 @@
     src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
 }
 
-body{
+body{  
     background-image: url('../assets/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     font-family: Rubik;
+    
 }
 
 
+.resultadocontainer{
+    background:linear-gradient(white,rgb(147, 144, 144));
+    box-shadow: 8px 5px 5px black;
+    color: black;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    margin: 150px auto;
+
+}
+
+
+h1{
+    font-size: 4rem;
+    position: absolute;
+}
+
+
+@keyframes ola {
+    0%,
+    100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
+    }
+    50%{
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100% );
+ 
+    }
+}
+
+.ola{
+    color: #09f;
+    animation: ola 3s ease-in-out infinite;
+}

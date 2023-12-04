@@ -3,6 +3,8 @@ import { AutomovilDeportivo } from "./automovilDeportivo.js";
 
 const resultadoContainer = document.createElement('div');
 document.body.appendChild(resultadoContainer);
+resultadoContainer.className= "resultadocontainer";
+
 
 export function mostrarResultado(mensaje){
     resultadoContainer.innerHTML += `<p>${mensaje}</p>`;
