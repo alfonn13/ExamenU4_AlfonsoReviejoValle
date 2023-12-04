@@ -17,27 +17,32 @@ export class Vehiculo{
 
     mostrarDatos(){
         const datos = `
-        El vehiculo es de la marca ${marca}
-        El modelo del vehiculo es ${modelo}
-        El color del vehiculo es ${color}
-        La fabricacion del vehiculo es del ${fabricacion}
-        La cilindrada del vehiculo es ${cilindrada}
+        <p>El vehiculo es de la marca ${this.#marca}</p>
+        <p>El modelo del vehiculo es ${this.#modelo}</p>
+        <p>El color del vehiculo es ${this.#color}</p>
+        <p>La fabricacion del vehiculo es del ${this.#fabricacion}</p>
+        <p>La cilindrada del vehiculo es ${this.#cilindrada}</p>
         `;
 
         mostrarResultado(datos);
     }
 
     acelerar(velocidad){
-        `El vehiculo de la marca ${this.#marca} ha acelerado a una velocidad de ${velocidad}`
+        const mensaje = `El vehiculo de la marca ${this.#marca} ha acelerado a una velocidad de ${velocidad}`
+        mostrarResultado(mensaje);
     }
 
+    
     arrancar(){
-        `El vehiculo de la marca ${this.#marca} ha arrancado`
+        const mensaje = `El vehiculo de la marca ${this.#marca} ha arrancado`
+        mostrarResultado(mensaje);
     }
 
     frenar(){
-        `El vehiculo de la marca ${this.#marca} ha frenado`
+        const mensaje = `El vehiculo de la marca ${this.#marca} ha frenado`
+        mostrarResultado(mensaje);
     }
+ 
 
     get marca(){
         return this.#marca;
