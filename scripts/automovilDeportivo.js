@@ -1,8 +1,3 @@
-/*
-Nombre: Alfonso Reviejo Valle
-GitHub: 
-*/
-
 //Importamos las clases necesarias para el funcionamiento de nuestro codigo
 import { Vehiculo } from "./vehiculo.js";
 import { mostrarResultado } from "./main.js";
