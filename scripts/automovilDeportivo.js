@@ -1,6 +1,7 @@
 import { Vehiculo } from "./vehiculo.js";
+import { mostrarResultado } from "./main.js";
 
-class AutomovilDeportivo {
+export class AutomovilDeportivo {
     #potenciaMotor;
 
     constructor(marca,modelo,color,fabricacion,cilindrada,potenciaMotor){
