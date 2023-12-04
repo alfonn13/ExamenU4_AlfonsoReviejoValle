@@ -1,17 +1,15 @@
 @font-face {
     font-family: Rubik;
-    src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+    src: url('../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 body{  
-    
-    background-image: url('../assets/fondo.jpg');
+    background-image: url('../assets/fondoprueba.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     font-family: Rubik;
-    
 }
 
 .resultadocontainer{
@@ -25,11 +23,17 @@ body{
     margin-bottom: 80px;
 
 }
+
 .parrafo{
     position: absolute;
     padding-top: 100px;
 }
 
+/*
+Lo que hace es poner antes de lo que tiene parrafo el content que en mi caso puse un 
+megafono, ajuste el tamaño y la posicion donde queria que estuviese, este es un
+pseudoselector que permite añadir algo antes del parrafo con clase::before
+*/
 .parrafo::before {
     content: "📢 "; 
     font-size: 1.2em;
@@ -41,6 +45,12 @@ h1{
     font-size: 4rem;
     position: absolute;
 }
+
+.borde{
+    color: white;
+    text-shadow: -1px -1px 0 white, 1px - 1px 0
+    white, 1px 1px 0 white, -1px 1px 0 white;
+    }
 
 
 @keyframes ola {
